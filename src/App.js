@@ -4,6 +4,7 @@ import Title from './comps/Title';
 import React, { useState } from 'react';
 import Updloadform from "./comps/Uploadform";
 import ImageGrid from './comps/imageGrid';
+//import Progressbar from '../Progressbar';
 
 
 
