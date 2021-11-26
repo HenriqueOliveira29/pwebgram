@@ -4,7 +4,7 @@ import Title from './comps/Title';
 import React, { useState } from 'react';
 import Updloadform from "./comps/Uploadform";
 import ImageGrid from './comps/imageGrid';
-//import Progressbar from '../Progressbar';
+import Modal from './comps/Modal';
 
 
 
@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <Title></Title>
       <Updloadform/>
-      <ImageGrid setSelectedImg={setSelectedImg}></ImageGrid>
+      <ImageGrid setSelectedImg={setSelectedImg}>
+        {SelectedImg && (<Modal SelectedImg={SelectedImg} setSelectedImg={setSelectedImg}/>)}
+      </ImageGrid>
 
     </div>
   );
